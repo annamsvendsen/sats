@@ -1,4 +1,4 @@
-import { formaterTid } from "./utils.js";
+import { formaterTid, formaterDato } from "./utils.js";
 
 //Henter data fra JSON-fila og omgjør til javascript
 fetch('gruppetimedata.json')
@@ -15,10 +15,7 @@ fetch('gruppetimedata.json')
 // Funksjon som viser gruppetimene på nettsiden
 function visGruppetimer(gruppetimer) {
     const gruppetimeInnhold = document.getElementById('gruppetimer');
-    const formatertDato = new Date(gruppetimer[0].zonedStartTime.dateTime).toLocaleDateString('no-NO', {
-        month: 'long',
-        day: '2-digit'
-    });
+    const formatertDato = formaterDato(gruppetimer)
     gruppetimeInnhold.innerHTML = `<h2>${formatertDato}</h2>`;
 
     //Itererer gjennom alle gruppetimene
