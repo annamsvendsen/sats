@@ -1,0 +1,57 @@
+.gruppetimer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #f1f1f3;
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); 
+  }
+
+  h2 {
+    color: #2c3e50; 
+  }
+  
+  .tidOgVarighet {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 0;
+  }
+  
+  .tidOgVarighet p, .tidOgVarighet b {
+    margin: 0;
+  }
+  
+  .bookingKnapp, .ventelisteKnapp {
+    padding: 20px 30px;
+    font-size: 18px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .bookingKnapp {
+    background-color: #02264c;
+  }
+  
+  .bookingKnapp:hover {
+    background-color: #03468d;
+  }
+  
+  .ventelisteKnapp {
+    background-color: #ae9403;
+  }
+  
+  .ventelisteKnapp:hover {
+    background-color: #c9b90c;
+  }
+  
+  .knapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
